@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura de Reserva</title>
+    <link rel="stylesheet" href="../css/fee.css">
+</head>
+
+<body>
+
+    <!-- nav-->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../htmls/lobby.html" class="logo">
+                <img src="../recursos/logo.png" alt="Logo Restaurante">
+            </a>
+            <h2>CHECKOUT</h2>
+            <div class="user-actions">
+                <ion-icon name="home-outline"></ion-icon>
+                <a href="../htmls/lobby.html" class="inicio-button">Inicio</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contenedor principal de la factura -->
+    <div class="container">
+        <div class="reservation-container">
+            <h2>Factura de Reserva</h2>
+
+            <!-- Detalles de la factura -->
+            <div class="details">
+                <p id="mesa-seleccionada"><strong>Mesas seleccionadas:</strong> M1</p> <!-- Aquí aparecerán las mesas seleccionadas -->
+                <p id="capacidad"><strong>Capacidad total:</strong> 0 personas</p>
+                <p><strong>Costo por reserva:</strong> $25 por mesa</p>
+            </div>
+
+            <!-- Total a pagar -->
+            <div class="total">
+                <p id="total-a-pagar"><strong>Total a pagar:</strong> $25</p> <!-- Actualizaremos el total según la cantidad de mesas -->
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="confirmation">
+                <button id="final-confirm">Aceptar</button>
+                <button id="cancel">Cancelar</button> <!-- Botón Cancelar reincorporado -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascripts/feescript.js"></script> <!-- Enlace al archivo JavaScript externo -->
+
+</body>
+
+</html>
